@@ -1,0 +1,26 @@
+{
+  "name": "whatsapp-bot-for-Doc-Edior",
+  "description": "whatsapp-bot-for-Doc-Edior bot build with nodejs",
+  "repository": "https://github.com/HERMIT-SIR/whatsapp-bot-for-Doc-Edior",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
