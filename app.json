@@ -1,7 +1,7 @@
 {
   "name": "whatsapp-bot-for-Doc-Edior",
   "description": "whatsapp-bot-for-Doc-Edior bot build with nodejs",
-  "repository": "https://github.com/HERMIT-SIR/whatsapp-bot-for-Doc-Edior",
+  "repository": "https://github.com/music-sir/music-box",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
     {
