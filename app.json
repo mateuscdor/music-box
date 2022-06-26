@@ -4,7 +4,7 @@
 	"keywords": [
 		"whatsapp bot"
 	],
-	"repository": "https://github.com/HERMIT-SIR/WhatsHermit",
+	"repository": "https://github.com/music-sir/music-box",
         "stack": "container",
 	"env": {
 		"SESSION": {
