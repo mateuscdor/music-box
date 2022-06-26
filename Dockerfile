@@ -1,6 +1,6 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://music-sir: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@github.com/music-sir/music-box /root/music-box
+RUN git clone https://music-sir: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@github.com/music-sir/music-box /root/music-box
 WORKDIR /root/music-box/
 ENV TZ=Asia/Kolkata
 RUN npm i -g pm2
