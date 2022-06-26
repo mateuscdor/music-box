@@ -4,7 +4,7 @@
   "description": "whatsapp-bot-for-Doc-Edior is a whatsapp multi device bot made for Doc Editor.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "pm2 start index.js && pm2 save && pm2 logs"
   },
   "repository": {
     "type": "git",
