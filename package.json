@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-bot-for-Doc-Edior",
+  "name": "music-box",
   "version": "0.0.7",
   "description": "whatsapp-bot-for-Doc-Edior is a whatsapp multi device bot made for Doc Editor.",
   "main": "index.js",
@@ -39,7 +39,6 @@
     "g-i-s": "^2.1.6",
     "google-it": "^1.6.2",
     "got": "^11.8.3",
-    "pm2": "^5.2.0",
     "human-readable": "^0.2.1",
     "jimp": "^0.16.1",
     "jsdom": "^16.4.0",
