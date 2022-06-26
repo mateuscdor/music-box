@@ -1,9 +1,42 @@
 {
-  "name": "whatsapp-bot-for-Doc-Edior",
-  "description": "whatsapp-bot-for-Doc-Edior bot build with nodejs",
-  "repository": "https://github.com/music-sir/music-box",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
-  "buildpacks": [
+	"name": "WhatsHermit",
+	"description": " Whatsapp bot.",
+	"keywords": [
+		"whatsapp bot"
+	],
+	"repository": "https://github.com/HERMIT-SIR/WhatsHermit",
+        "stack": "container",
+	"env": {
+		"SESSION": {
+			"description": "session id",
+			"required": false,
+			"value": ""
+		},
+		"SUDO": {
+			"description": "admin",
+			"required": true,
+			"value": "null"
+		},
+		"MODE": {
+			"description": "mode",
+			"required": true,
+			"value": "public"
+		},
+		"ALWAYS_ONLINE": {
+			"description": "show bot number last seen as online",
+			"required": false,
+			"value": "true"
+		},
+		"HEROKU_APP_NAME": {
+			"description": "Heroku app name, same as above entered",
+			"required": true
+		},
+		"HEROKU_API_KEY": {
+			"description": "Heroku account api key, https://dashboard.heroku.com/account",
+			"required": true
+		}
+	},
+	"buildpacks": [
     {
       "url": "heroku/nodejs"
     },
@@ -11,16 +44,12 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
-    },
-    {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
-  ],
-   "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+    ],
+	"addons": [
+		{
+			"plan": "heroku-postgresql"
+		}
+	]
 }
